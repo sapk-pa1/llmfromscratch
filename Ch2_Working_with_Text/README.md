@@ -78,12 +78,14 @@ LLMs are pretrained by predicting the next word in the sequence
 
 
 # Encoding Word Position 
-LLMs are based on the self attention mechanism which doesn't take into consideration about the position or order of the token within the sequence. For reproducibility purpose we need to have some sorts of position dependent encoding of the token IDs. 
+LLMs are based on the self attention mechanism which doesn't take into consideration about the position or order of the token within the sequence. For reproducibility purpose we nee d to have some sorts of position dependent encoding of the token IDs. 
 
 ## Relative Positional Embedding 
 
 
 ## Absolute Position Embedding 
+They are associated with the specific position in the sequence. For each position in the input sequence, a unique embedding is added to the token's embedding to convey the exact location. 
+The position embedding of the first and the second token will be distinct. 
 
 
 ### References
